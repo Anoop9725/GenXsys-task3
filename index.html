@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Component Library</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🔥 UI Component Library</h1>
+        <p>Reusable, accessible, customizable components</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Buttons -->
+        <section>
+            <h2>Buttons</h2>
+            <button class="ui-btn primary">Primary Button</button>
+            <button class="ui-btn secondary">Secondary Button</button>
+            <button class="ui-btn danger">Danger Button</button>
+        </section>
+
+        <!-- Card -->
+        <section>
+            <h2>Card Component</h2>
+            <div class="ui-card">
+                <h3>Component Card</h3>
+                <p>This is a reusable card component.</p>
+                <button class="ui-btn primary">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Alert -->
+        <section>
+            <h2>Alert Component</h2>
+            <div class="ui-alert success">✔ Success! Your data has been saved.</div>
+            <div class="ui-alert error">⚠ Error! Something went wrong.</div>
+        </section>
+
+        <!-- Modal -->
+        <section>
+            <h2>Modal Component</h2>
+            <button class="ui-btn primary" onclick="openModal()">Open Modal</button>
+
+            <div id="modal" class="ui-modal" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <h3>Modal Title</h3>
+                    <p>This is a reusable modal.</p>
+                    <button class="ui-btn danger" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section>
+            <h2>Tabs Component</h2>
+
+            <div class="ui-tabs">
+                <button class="tab active" onclick="switchTab(event,'tab1')">Tab 1</button>
+                <button class="tab" onclick="switchTab(event,'tab2')">Tab 2</button>
+            </div>
+
+            <div id="tab1" class="tab-content active">
+                <p>This is content for Tab 1</p>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <p>This is content for Tab 2</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
